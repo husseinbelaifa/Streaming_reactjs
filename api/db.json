@@ -1,0 +1,51 @@
+{
+  "streams": [
+    {
+      "title": "sqsqqs",
+      "description": "qsqs",
+      "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "here's some other stream",
+      "id": 2
+    },
+    {
+      "title": "qqsqs",
+      "description": "qssqsqd",
+      "id": 3
+    },
+    {
+      "title": "qsqsqs",
+      "description": "qssqqsqs",
+      "id": 4
+    },
+    {
+      "title": "koko",
+      "description": "sqqsq",
+      "id": 5
+    },
+    {
+      "title": "koko",
+      "description": "sqqsq",
+      "id": 6
+    },
+    {
+      "title": "newStream",
+      "description": "this is me ",
+      "id": 7
+    },
+    {
+      "title": "this is stream",
+      "description": "sdsdsd",
+      "userId": "113062618979262286076",
+      "id": 8
+    },
+    {
+      "title": "reatc",
+      "description": "react",
+      "userId": "113062618979262286076",
+      "id": 9
+    }
+  ]
+}
