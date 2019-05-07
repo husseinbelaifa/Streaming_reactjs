@@ -19,14 +19,14 @@ class StreamList extends React.Component {
           <Link to={`streams/edit/${stream.id}`} className="ui button primary">
             {" "}
             Edit{" "}
-          </Link>
+          </Link>{" "}
           <Link
             to={`streams/delete/${stream.id}`}
             className="ui button negative"
           >
             {" "}
             Delete{" "}
-          </Link>
+          </Link>{" "}
         </div>
       );
     }
@@ -36,13 +36,14 @@ class StreamList extends React.Component {
     return this.props.streams.map(stream => {
       return (
         <div className="item" key={stream.id}>
-          {this.renderAdmin(stream)}
+          {" "}
+          {this.renderAdmin(stream)}{" "}
           <i className="large middle aligned icon camera" />
-
           <div className="content">
-            {stream.title}
-            <div className="description">{stream.description}</div>
-          </div>
+            {" "}
+            {stream.title}{" "}
+            <div className="description"> {stream.description} </div>{" "}
+          </div>{" "}
         </div>
       );
     });
@@ -51,10 +52,14 @@ class StreamList extends React.Component {
   renderCreate() {
     if (this.props.isSignedIn) {
       return (
-        <div style={{ textAlign: "right" }}>
+        <div
+          style={{
+            textAlign: "right"
+          }}
+        >
           <Link to="/streams/new" className="ui button primary">
-            Create Stream
-          </Link>
+            Create Stream{" "}
+          </Link>{" "}
         </div>
       );
     }
@@ -63,10 +68,9 @@ class StreamList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Streams</h2>
-
-        <div className="ui celled list">{this.renderedList()}</div>
-        {this.renderCreate()}
+        <h2> Streams </h2>
+        <div className="ui celled list"> {this.renderedList()} </div>{" "}
+        {this.renderCreate()}{" "}
       </div>
     );
   }
