@@ -30,7 +30,15 @@ export default (state = {}, action) => {
       };
 
     case DELETE_STREAM:
-      return _.omit(state, action.payload);
+
+
+      return {
+        ...state, [action.payload]: undefined
+      };
+      // return delete state[action.payload];
+      // return Object.assign({}, state, {
+      //   streams: [...state.streams.filter(item => item.id !== action.payload)],
+      // });
 
     case FETCH_STREAMS:
       return {
