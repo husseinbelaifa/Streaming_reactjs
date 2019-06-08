@@ -9,7 +9,12 @@ import { Link } from "react-router-dom";
 class StreamList extends React.Component {
   componentDidMount() {
     this.props.fetchStreams();
+    console.log("i was returened");
   }
+
+  // componentDidUpdate() {
+  //   this.props.fetchStreams();
+  // }
 
   renderAdmin(stream) {
     console.log(this.props.currentUserId);
@@ -44,7 +49,7 @@ class StreamList extends React.Component {
             <Link to={`/streams/${stream.id}`} className="header">
               {" "}
               {stream.title}{" "}
-            </Link>
+            </Link>{" "}
             <div className="description"> {stream.description} </div>{" "}
           </div>{" "}
         </div>
@@ -71,7 +76,7 @@ class StreamList extends React.Component {
   render() {
     return (
       <div>
-        <h2> Streams </h2>
+        <h2> Streams </h2>{" "}
         <div className="ui celled list"> {this.renderedList()} </div>{" "}
         {this.renderCreate()}{" "}
       </div>
